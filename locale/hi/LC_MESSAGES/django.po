@@ -1,0 +1,544 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: hi\n"
+
+msgid "Dashboard"
+msgstr "डैशबोर्ड"
+
+msgid "Skill Gap Analysis"
+msgstr "स्किल गैप विश्लेषण"
+
+msgid "Resume Analyzer"
+msgstr "रिज़्यूमे एनालाइज़र"
+
+msgid "Learning Roadmap"
+msgstr "लर्निंग रोडमैप"
+
+msgid "AI Chatbot"
+msgstr "AI चैटबॉट"
+
+msgid "Student Account"
+msgstr "छात्र खाता"
+
+msgid "Log Out"
+msgstr "लॉग आउट"
+
+msgid "Search careers, skills, or roadmap..."
+msgstr "करियर, स्किल्स या रोडमैप खोजें..."
+
+msgid "Student"
+msgstr "छात्र"
+
+msgid "AI CAREER INSIGHT"
+msgstr "AI करियर इनसाइट"
+
+msgid "Unlock Your"
+msgstr "अपनी"
+
+msgid "Potential"
+msgstr "क्षमता को उजागर करें"
+
+msgid "Your placement readiness has increased by %(delta)s this month. You're among the top 5%% of candidates for %(role)s roles."
+msgstr "इस महीने आपकी प्लेसमेंट तैयारी %(delta)s बढ़ी है। आप %(role)s भूमिकाओं के लिए शीर्ष 5%% उम्मीदवारों में शामिल हैं।"
+
+msgid "Resume Deep Dive"
+msgstr "रिज़्यूमे डीप डाइव"
+
+msgid "View Career Roadmap"
+msgstr "करियर रोडमैप देखें"
+
+msgid "PLACEMENT READINESS"
+msgstr "प्लेसमेंट तैयारी"
+
+msgid "RESUME SCORE"
+msgstr "रिज़्यूमे स्कोर"
+
+msgid "Optimized for ATS"
+msgstr "ATS के लिए अनुकूलित"
+
+msgid "SKILLS ACQUIRED"
+msgstr "अर्जित स्किल्स"
+
+msgid "+2 new this month"
+msgstr "इस महीने +2 नए"
+
+msgid "INTERVIEW RATE"
+msgstr "इंटरव्यू दर"
+
+msgid "Confidence for top-tier roles"
+msgstr "शीर्ष स्तरीय भूमिकाओं के लिए आत्मविश्वास"
+
+msgid "Placement Readiness Analysis"
+msgstr "प्लेसमेंट तैयारी विश्लेषण"
+
+msgid "Track your growth over the current semester"
+msgstr "मौजूदा सेमेस्टर में अपनी प्रगति देखें"
+
+msgid "Next milestone: Backend Advanced Concepts"
+msgstr "अगला मील का पत्थर: बैकएंड एडवांस्ड कॉन्सेप्ट्स"
+
+msgid "Completed: React Foundation"
+msgstr "पूर्ण: रिएक्ट फाउंडेशन"
+
+msgid "In Progress: Node.js API Expert"
+msgstr "प्रगति पर: Node.js API एक्सपर्ट"
+
+msgid "Continue Learning"
+msgstr "सीखना जारी रखें"
+
+msgid "AI CAREER PREDICTION"
+msgstr "AI करियर भविष्यवाणी"
+
+msgid "94% Match Probability"
+msgstr "94% मैच संभावना"
+
+msgid "Explore this path"
+msgstr "यह पथ देखें"
+
+msgid "Skill Distribution"
+msgstr "स्किल वितरण"
+
+msgid "Resume Health"
+msgstr "रिज़्यूमे हेल्थ"
+
+msgid "ATS SCORE"
+msgstr "ATS स्कोर"
+
+msgid "Fix Suggestions"
+msgstr "सुझाव ठीक करें"
+
+msgid "Recommended Jobs for You"
+msgstr "आपके लिए अनुशंसित नौकरियां"
+
+msgid "View all listings"
+msgstr "सभी लिस्टिंग देखें"
+
+msgid "Match"
+msgstr "मैच"
+
+msgid "Quick Apply"
+msgstr "क्विक अप्लाई"
+
+msgid "Upcoming Internships"
+msgstr "आगामी इंटर्नशिप"
+
+msgid "Deadline"
+msgstr "अंतिम तिथि"
+
+msgid "Chat with AI Assistant"
+msgstr "AI असिस्टेंट से चैट करें"
+
+msgid "Readiness"
+msgstr "तैयारी"
+
+msgid "Technical"
+msgstr "तकनीकी"
+
+msgid "Soft Skills"
+msgstr "सॉफ्ट स्किल्स"
+
+msgid "Aptitude"
+msgstr "योग्यता"
+
+msgid "Domain"
+msgstr "डोमेन"
+
+msgid "Get instant, AI-powered feedback to optimize your resume for your dream career path."
+msgstr "अपने सपनों के करियर पथ के लिए रिज़्यूमे को बेहतर बनाने हेतु तुरंत AI-संचालित फीडबैक पाएं।"
+
+msgid "History"
+msgstr "इतिहास"
+
+msgid "New Analysis"
+msgstr "नया विश्लेषण"
+
+msgid "Extracted Resume Information"
+msgstr "निकाली गई रिज़्यूमे जानकारी"
+
+msgid "Overall Match"
+msgstr "समग्र मैच"
+
+msgid "Based on your target industry: Tech"
+msgstr "आपके लक्षित उद्योग के आधार पर: टेक"
+
+msgid "SCORE"
+msgstr "स्कोर"
+
+msgid "ATS Ready"
+msgstr "ATS तैयार"
+
+msgid "Needs Polish"
+msgstr "पॉलिश की जरूरत"
+
+msgid "Download Feedback PDF"
+msgstr "फीडबैक PDF डाउनलोड करें"
+
+msgid "View Optimization Guide"
+msgstr "ऑप्टिमाइज़ेशन गाइड देखें"
+
+msgid "Key Metrics"
+msgstr "मुख्य मेट्रिक्स"
+
+msgid "Pro Tip"
+msgstr "प्रो टिप"
+
+msgid "Recruiters spend an average of 6 seconds scanning a resume. Ensure your most impressive achievement is in the top 30%% of the page."
+msgstr "भर्तीकर्ता एक रिज़्यूमे स्कैन करने में औसतन 6 सेकंड बिताते हैं। सुनिश्चित करें कि आपकी सबसे प्रभावशाली उपलब्धि पेज के शीर्ष 30%% में हो।"
+
+msgid "All Feedback"
+msgstr "सभी फीडबैक"
+
+msgid "Strengths"
+msgstr "मजबूत पक्ष"
+
+msgid "Improvements"
+msgstr "सुधार"
+
+msgid "Section Breakdown"
+msgstr "सेक्शन ब्रेकडाउन"
+
+msgid "How AI weighted each part of your resume"
+msgstr "AI ने आपके रिज़्यूमे के हर हिस्से को कैसे आंका"
+
+msgid "Take the Next Step"
+msgstr "अगला कदम उठाएं"
+
+msgid "Apply these AI recommendations to your resume and boost your interview chance by 3x."
+msgstr "अपने रिज़्यूमे में इन AI सुझावों को लागू करें और अपने इंटरव्यू के अवसर को 3 गुना बढ़ाएं।"
+
+msgid "Start Skill Gap Analysis"
+msgstr "स्किल गैप विश्लेषण शुरू करें"
+
+msgid "Uploading..."
+msgstr "अपलोड हो रहा है..."
+
+msgid "Resume upload failed. Please try again."
+msgstr "रिज़्यूमे अपलोड विफल रहा। कृपया पुनः प्रयास करें।"
+
+msgid "Not found in this resume."
+msgstr "इस रिज़्यूमे में नहीं मिला।"
+
+msgid "Skills"
+msgstr "स्किल्स"
+
+msgid "Education"
+msgstr "शिक्षा"
+
+msgid "Projects"
+msgstr "प्रोजेक्ट्स"
+
+msgid "Certifications"
+msgstr "प्रमाणपत्र"
+
+msgid "Experience"
+msgstr "अनुभव"
+
+msgid "AI DIAGNOSTIC TOOL"
+msgstr "AI डायग्नोस्टिक टूल"
+
+msgid "Precision Skill Analysis"
+msgstr "प्रिसिजन स्किल विश्लेषण"
+
+msgid "Bridge the gap between your current capabilities and the requirements of top-tier AI roles. Our analysis identifies your high-priority growth areas using industry-standard benchmarks."
+msgstr "अपनी वर्तमान क्षमताओं और शीर्ष स्तरीय AI भूमिकाओं की आवश्यकताओं के बीच की खाई को पाटें। हमारा विश्लेषण उद्योग-मानक बेंचमार्क का उपयोग करके आपके उच्च-प्राथमिकता वाले विकास क्षेत्रों की पहचान करता है।"
+
+msgid "Generate Roadmap"
+msgstr "रोडमैप बनाएं"
+
+msgid "Update Assessment"
+msgstr "मूल्यांकन अपडेट करें"
+
+msgid "READINESS SCORE"
+msgstr "तैयारी स्कोर"
+
+msgid "CRITICAL GAPS"
+msgstr "गंभीर कमियां"
+
+msgid "High-priority"
+msgstr "उच्च प्राथमिकता"
+
+msgid "SKILL MASTERY"
+msgstr "स्किल मास्टरी"
+
+msgid "Certified"
+msgstr "प्रमाणित"
+
+msgid "Detected"
+msgstr "पता चला"
+
+msgid "All required skills met"
+msgstr "सभी आवश्यक स्किल्स पूरी हुईं"
+
+msgid "skill(s) remaining"
+msgstr "स्किल(स) शेष"
+
+msgid "*Based on your uploaded resume vs your target role's required skills."
+msgstr "*आपके अपलोड किए गए रिज़्यूमे और आपकी लक्षित भूमिका के आवश्यक स्किल्स के आधार पर।"
+
+msgid "Required skills for your target role not found in your resume"
+msgstr "आपकी लक्षित भूमिका के लिए आवश्यक स्किल्स जो आपके रिज़्यूमे में नहीं मिलीं"
+
+msgid "Your <b>%(skill)s</b> gap is currently the highest priority. Closing it would directly improve your <b>%(role)s</b> match score."
+msgstr "फिलहाल आपकी <b>%(skill)s</b> कमी सबसे प्राथमिक है। इसे पूरा करने से आपका <b>%(role)s</b> मैच स्कोर सीधे बेहतर होगा।"
+
+msgid "Your resume already covers every required skill for your target role — no gaps detected."
+msgstr "आपका रिज़्यूमे पहले से ही आपकी लक्षित भूमिका के लिए सभी आवश्यक स्किल्स को कवर करता है — कोई कमी नहीं पाई गई।"
+
+msgid "Upload your resume to generate your skill analysis."
+msgstr "अपना स्किल विश्लेषण बनाने के लिए अपना रिज़्यूमे अपलोड करें।"
+
+msgid "Upload Resume"
+msgstr "रिज़्यूमे अपलोड करें"
+
+msgid "We couldn't detect enough skills from this resume. Please upload a clearer or more detailed resume."
+msgstr "हम इस रिज़्यूमे से पर्याप्त स्किल्स नहीं पहचान सके। कृपया एक स्पष्ट या अधिक विस्तृत रिज़्यूमे अपलोड करें।"
+
+msgid "Upload a Different Resume"
+msgstr "एक अलग रिज़्यूमे अपलोड करें"
+
+msgid "Your Personalized"
+msgstr "आपका वैयक्तिकृत"
+
+msgid "Built from your uploaded resume's detected skills and the requirements for your target role: %(role)s."
+msgstr "आपके अपलोड किए गए रिज़्यूमे में पहचाने गए स्किल्स और आपकी लक्षित भूमिका %(role)s की आवश्यकताओं के आधार पर तैयार किया गया।"
+
+msgid "View Skill Analysis"
+msgstr "स्किल विश्लेषण देखें"
+
+msgid "Resources Completed"
+msgstr "पूर्ण संसाधन"
+
+msgid "Skill Gaps Closed"
+msgstr "बंद स्किल गैप"
+
+msgid "One milestone per skill gap, highest priority first"
+msgstr "प्रति स्किल गैप एक माइलस्टोन, उच्च प्राथमिकता पहले"
+
+msgid "SKILL GAP"
+msgstr "स्किल गैप"
+
+msgid "Recommended resources to close your %(skill)s skill gap for the %(role)s role."
+msgstr "%(role)s भूमिका के लिए आपकी %(skill)s स्किल गैप को पूरा करने हेतु अनुशंसित संसाधन।"
+
+msgid "No curated resources for this skill yet."
+msgstr "इस स्किल के लिए अभी तक कोई क्यूरेटेड संसाधन नहीं है।"
+
+msgid "View Skill Gaps"
+msgstr "स्किल गैप देखें"
+
+msgid "You've closed every skill gap for your target role — great work!"
+msgstr "आपने अपनी लक्षित भूमिका के लिए हर स्किल गैप को पूरा कर लिया है — बहुत बढ़िया!"
+
+msgid "You've closed every skill gap for your target role — great work! No learning path needed right now."
+msgstr "आपने अपनी लक्षित भूमिका के लिए हर स्किल गैप को पूरा कर लिया है — बहुत बढ़िया! अभी किसी लर्निंग पथ की आवश्यकता नहीं है।"
+
+msgid "Upload your resume to generate your personalized learning path."
+msgstr "अपना वैयक्तिकृत लर्निंग पथ बनाने के लिए अपना रिज़्यूमे अपलोड करें।"
+
+msgid "Exclusive video series for %(skill)s"
+msgstr "%(skill)s के लिए विशेष वीडियो श्रृंखला"
+
+msgid "Exclusive video series, unlocked as you progress"
+msgstr "जैसे-जैसे आप आगे बढ़ेंगे, अनलॉक होने वाली विशेष वीडियो श्रृंखला"
+
+msgid "NEXT MILESTONE"
+msgstr "अगला मील का पत्थर"
+
+msgid "in %(weeks)s weeks · 2 modules remaining"
+msgstr "%(weeks)s सप्ताह में · 2 मॉड्यूल शेष"
+
+msgid "Competency Blueprint"
+msgstr "कॉम्पिटेंसी ब्लूप्रिंट"
+
+msgid "Multidimensional view of your current standing vs industry targets"
+msgstr "उद्योग लक्ष्यों की तुलना में आपकी वर्तमान स्थिति का बहुआयामी दृश्य"
+
+msgid "*Benchmarked against FAANG and Tier-1 startup data."
+msgstr "*FAANG और टियर-1 स्टार्टअप डेटा के मुकाबले बेंचमार्क किया गया।"
+
+msgid "Critical Skill Deficit"
+msgstr "गंभीर स्किल कमी"
+
+msgid "The top 5 skills with the largest growth opportunity"
+msgstr "सबसे बड़े विकास अवसर वाले शीर्ष 5 स्किल्स"
+
+msgid "Actionable Insight:"
+msgstr "कार्रवाई योग्य जानकारी:"
+
+msgid "Your <b>%(skill)s</b> gap is currently the highest. Bridging this would increase your <b>%(role)s</b> match score by 14%%."
+msgstr "फिलहाल आपकी <b>%(skill)s</b> कमी सबसे अधिक है। इसे पाटने से आपका <b>%(role)s</b> मैच स्कोर 14%% बढ़ जाएगा।"
+
+msgid "Detailed Skill Inventory"
+msgstr "विस्तृत स्किल इन्वेंटरी"
+
+msgid "Comprehensive list of tracked skills and progress"
+msgstr "ट्रैक किए गए स्किल्स और प्रगति की विस्तृत सूची"
+
+msgid "Search skills..."
+msgstr "स्किल्स खोजें..."
+
+msgid "SKILL NAME"
+msgstr "स्किल का नाम"
+
+msgid "CURRENT VS TARGET"
+msgstr "वर्तमान बनाम लक्ष्य"
+
+msgid "GROWTH STATUS"
+msgstr "विकास स्थिति"
+
+msgid "PRIORITY"
+msgstr "प्राथमिकता"
+
+msgid "Target:"
+msgstr "लक्ष्य:"
+
+msgid "Market Compatibility"
+msgstr "मार्केट कम्पैटिबिलिटी"
+
+msgid "How your current skill profile matches top industry roles"
+msgstr "आपकी वर्तमान स्किल प्रोफाइल शीर्ष उद्योग भूमिकाओं से कैसे मेल खाती है"
+
+msgid "View Fit Analysis"
+msgstr "फिट विश्लेषण देखें"
+
+msgid "Current Proficiency"
+msgstr "वर्तमान दक्षता"
+
+msgid "Industry Target"
+msgstr "उद्योग लक्ष्य"
+
+msgid "Personalized for %(name)s"
+msgstr "%(name)s के लिए वैयक्तिकृत"
+
+msgid "Your AI Engineer"
+msgstr "आपकी AI इंजीनियर"
+
+msgid "Odyssey"
+msgstr "यात्रा"
+
+msgid "Based on your resume analysis and career predictions, we've crafted a 24-week milestone-based path to landing a role as a Machine Learning Engineer."
+msgstr "आपके रिज़्यूमे विश्लेषण और करियर भविष्यवाणियों के आधार पर, हमने मशीन लर्निंग इंजीनियर की भूमिका पाने के लिए 24-सप्ताह का माइलस्टोन-आधारित पथ तैयार किया है।"
+
+msgid "Resume Journey"
+msgstr "यात्रा फिर से शुरू करें"
+
+msgid "View Certifications"
+msgstr "प्रमाणपत्र देखें"
+
+msgid "Overall Progress"
+msgstr "समग्र प्रगति"
+
+msgid "12/24 Weeks Completed"
+msgstr "12/24 सप्ताह पूर्ण"
+
+msgid "3 Badges Earned"
+msgstr "3 बैज अर्जित"
+
+msgid "Learning Path"
+msgstr "लर्निंग पथ"
+
+msgid "Click a milestone to view details"
+msgstr "विवरण देखने के लिए किसी माइलस्टोन पर क्लिक करें"
+
+msgid "CURRENT"
+msgstr "वर्तमान"
+
+msgid "Machine Learning Foundations"
+msgstr "मशीन लर्निंग फाउंडेशन"
+
+msgid "6 Weeks"
+msgstr "6 सप्ताह"
+
+msgid "LVL: SPECIALIZATION"
+msgstr "स्तर: विशेषज्ञता"
+
+msgid "Dive into supervised and unsupervised learning. Understand regression, classification, and clustering with real-world datasets."
+msgstr "सुपरवाइज्ड और अनसुपरवाइज्ड लर्निंग में गहराई से जाएं। वास्तविक दुनिया के डेटासेट के साथ रिग्रेशन, क्लासिफिकेशन और क्लस्टरिंग को समझें।"
+
+msgid "Skills to Acquire"
+msgstr "अर्जित करने योग्य स्किल्स"
+
+msgid "Milestone Tasks"
+msgstr "माइलस्टोन कार्य"
+
+msgid "1 of 3 tasks completed"
+msgstr "3 में से 1 कार्य पूर्ण"
+
+msgid "Premium Content"
+msgstr "प्रीमियम कंटेंट"
+
+msgid "Exclusive video series for Machine Learning Foundations"
+msgstr "मशीन लर्निंग फाउंडेशन के लिए विशेष वीडियो श्रृंखला"
+
+msgid "Mastering Python for ML"
+msgstr "ML के लिए पायथन में महारत"
+
+msgid "Mathematical Intuition Part II"
+msgstr "गणितीय अंतर्दृष्टि भाग II"
+
+msgid "Expert Guidance"
+msgstr "विशेषज्ञ मार्गदर्शन"
+
+msgid "Book a 15-min call with an industry mentor"
+msgstr "उद्योग सलाहकार के साथ 15 मिनट की कॉल बुक करें"
+
+msgid "Schedule Session"
+msgstr "सेशन शेड्यूल करें"
+
+msgid "Greetings, %(name)s! I'm your CareerMind AI Assistant. I've been analyzing your recent skill assessments and placement readiness score. How can I help you navigate your professional journey today?"
+msgstr "नमस्ते, %(name)s! मैं आपका CareerMind AI असिस्टेंट हूं। मैं आपके हालिया स्किल आकलन और प्लेसमेंट तैयारी स्कोर का विश्लेषण कर रहा हूं। आज मैं आपकी व्यावसायिक यात्रा में कैसे मदद कर सकता हूं?"
+
+msgid "Ask me about career paths, resumes, or skill mapping..."
+msgstr "करियर पथ, रिज़्यूमे या स्किल मैपिंग के बारे में मुझसे पूछें..."
+
+msgid "Powered by CareerMind AI · Enterprise Security Guaranteed"
+msgstr "CareerMind AI द्वारा संचालित · एंटरप्राइज सुरक्षा की गारंटी"
+
+msgid "Your Academic Career Guide"
+msgstr "आपका अकादमिक करियर गाइड"
+
+msgid "TARGET ROLE"
+msgstr "लक्षित भूमिका"
+
+msgid "RECENT HISTORY"
+msgstr "हाल का इतिहास"
+
+msgid "Review my placement readiness"
+msgstr "मेरी प्लेसमेंट तैयारी की समीक्षा करें"
+
+msgid "Optimize my resume for FinTech"
+msgstr "मेरे रिज़्यूमे को फिनटेक के लिए ऑप्टिमाइज़ करें"
+
+msgid "Suggest high-growth career paths"
+msgstr "उच्च-विकास करियर पथ सुझाएं"
+
+msgid "Find skill gaps for Senior Dev roles"
+msgstr "सीनियर डेव भूमिकाओं के लिए स्किल गैप खोजें"
+
+msgid "Your current placement readiness is %(score)s/100, up %(delta)s. You're on track for %(role)s roles."
+msgstr "आपकी वर्तमान प्लेसमेंट तैयारी %(score)s/100 है, %(delta)s की वृद्धि हुई है। आप %(role)s भूमिकाओं के लिए सही राह पर हैं।"
+
+msgid "Your resume score is %(score)s/100. Adding a professional summary and 1-2 more projects would push it higher."
+msgstr "आपका रिज़्यूमे स्कोर %(score)s/100 है। एक प्रोफेशनल सारांश और 1-2 और प्रोजेक्ट जोड़ने से यह और बेहतर होगा।"
+
+msgid "Your biggest skill gap right now is %(skill)s. Closing it would meaningfully raise your match score."
+msgstr "अभी आपकी सबसे बड़ी स्किल कमी %(skill)s है। इसे पूरा करने से आपका मैच स्कोर सार्थक रूप से बढ़ेगा।"
+
+msgid "Based on your profile, %(role)s and Senior Data Engineer are your strongest-matching paths right now."
+msgstr "आपकी प्रोफाइल के आधार पर, %(role)s और सीनियर डेटा इंजीनियर अभी आपके सबसे उपयुक्त पथ हैं।"
+
+msgid "I've noted that — I can help with placement readiness, resume feedback, skill gaps, or career path suggestions. What would you like to dig into?"
+msgstr "मैंने वह नोट कर लिया है — मैं प्लेसमेंट तैयारी, रिज़्यूमे फीडबैक, स्किल गैप या करियर पथ सुझावों में मदद कर सकता हूं। आप किस बारे में जानना चाहेंगे?"
+
+msgid "No file uploaded. Expected form field 'resume'."
+msgstr "कोई फ़ाइल अपलोड नहीं हुई। 'resume' फॉर्म फ़ील्ड अपेक्षित है।"
+
+msgid "Only PDF files are supported."
+msgstr "केवल PDF फ़ाइलें समर्थित हैं।"
+
+msgid "Could not read this PDF. It may be corrupted or scanned as images."
+msgstr "यह PDF पढ़ी नहीं जा सकी। यह खराब हो सकती है या छवियों के रूप में स्कैन की गई हो सकती है।"
+
+msgid "Resume uploaded and parsed successfully."
+msgstr "रिज़्यूमे सफलतापूर्वक अपलोड और पार्स किया गया।"

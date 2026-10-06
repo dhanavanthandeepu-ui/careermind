@@ -1,0 +1,39 @@
+{% extends "admin_panel/base_admin.html" %}
+{% block title %}Jobs & Internships — CareerMind AI{% endblock %}
+{% block content %}
+<h1 class="font-serif-display text-2xl text-maroon mb-1">Jobs &amp; Internships</h1>
+<p class="text-sm text-[#7a6a5e] mb-6">Review posts from alumni. Only approved posts are visible to students.</p>
+<div class="card p-6">
+  <table class="w-full text-sm">
+    <thead><tr class="text-left text-xs text-[#a89a8c] border-b border-[#ecdfc4]"><th class="py-2">TITLE</th><th>COMPANY</th><th>TYPE</th><th>POSTED BY</th><th>STATUS</th><th>ACTIONS</th></tr></thead>
+    <tbody>
+      {% for o in opportunities %}
+      <tr class="border-b border-[#f3ead6]">
+        <td class="py-3 font-medium">{{ o.title }}</td>
+        <td>{{ o.company }}</td>
+        <td>{{ o.get_kind_display }}</td>
+        <td>{{ o.posted_by_alumni.first_name|default:"Staff" }}</td>
+        <td><span class="badge badge-{{ o.status }}">{{ o.get_status_display }}</span></td>
+        <td>
+          <form method="post" class="flex gap-1">
+            {% csrf_token %}<input type="hidden" name="opp_id" value="{{ o.id }}">
+            {% if o.status == 'pending' %}
+              <button name="action" value="approve" class="btn-maroon text-xs px-3">Approve</button>
+              <button name="action" value="reject" class="border border-[#ecdfc4] text-xs px-3 rounded-lg"
+                      data-confirm="This post will be rejected and won't be shown to students."
+                      data-confirm-title="Reject this post?" data-confirm-text="Reject">Reject</button>
+            {% elif o.status == 'open' %}
+              <button name="action" value="close" class="border border-[#ecdfc4] text-xs px-3 rounded-lg"
+                      data-confirm="Students will no longer see this post."
+                      data-confirm-title="Close this post?" data-confirm-text="Close">Close</button>
+            {% else %}
+              <button name="action" value="approve" class="border border-[#ecdfc4] text-xs px-3 rounded-lg">Re-open</button>
+            {% endif %}
+          </form>
+        </td>
+      </tr>
+      {% empty %}<tr><td colspan="6" class="py-6 text-center text-[#a89a8c]">No opportunities posted yet.</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

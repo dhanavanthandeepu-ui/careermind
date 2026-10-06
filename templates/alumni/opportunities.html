@@ -1,0 +1,34 @@
+{% extends "alumni/base_alumni.html" %}
+{% block title %}Jobs & Internships — CareerMind AI{% endblock %}
+{% block content %}
+<h1 class="font-serif-display text-2xl text-maroon mb-1">Jobs &amp; Internships</h1>
+<p class="text-sm text-[#7a6a5e] mb-6">Post an opportunity for students, or browse what's open.</p>
+
+<div class="card p-6 mb-6">
+  <h3 class="font-semibold mb-3">Post a New Opportunity</h3>
+  <form method="post" class="grid md:grid-cols-2 gap-3">
+    {% csrf_token %}
+    <input name="title" placeholder="Job title" class="input-field" required>
+    <input name="company" placeholder="Company" class="input-field" required>
+    <select name="kind" class="input-field"><option value="job">Job</option><option value="internship">Internship</option></select>
+    <input name="location" placeholder="Location" class="input-field">
+    <input name="pay" placeholder="Pay (optional)" class="input-field md:col-span-2">
+    <button type="submit" class="btn-maroon md:col-span-2">Post Opportunity</button>
+  </form>
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+  <div>
+    <h3 class="font-semibold mb-3">Your Postings</h3>
+    {% for o in my_opps %}
+    <div class="card p-4 mb-3"><div class="font-medium text-sm">{{ o.title }}</div><div class="text-xs text-[#a89a8c]">{{ o.company }} · {{ o.get_status_display }}</div></div>
+    {% empty %}<p class="text-sm text-[#a89a8c]">You haven't posted anything yet.</p>{% endfor %}
+  </div>
+  <div>
+    <h3 class="font-semibold mb-3">Other Open Opportunities</h3>
+    {% for o in all_opps %}
+    <div class="card p-4 mb-3"><div class="font-medium text-sm">{{ o.title }}</div><div class="text-xs text-[#a89a8c]">{{ o.company }} · {{ o.location }}</div></div>
+    {% empty %}<p class="text-sm text-[#a89a8c]">Nothing else posted yet.</p>{% endfor %}
+  </div>
+</div>
+{% endblock %}

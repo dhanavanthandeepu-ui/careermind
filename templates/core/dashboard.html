@@ -1,0 +1,177 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+{% block title %}Dashboard — CareerMind AI{% endblock %}
+{% block content %}
+
+<div class="mb-6">
+  <h1 class="font-serif-display text-3xl text-maroon">{% trans "Welcome back" %}, {{ request.user.first_name }}</h1>
+  <p class="text-sm text-[#7a6a5e] mt-1">
+    {% if snap.has_resume and not snap.extraction_failed and career_goal %}
+      {% blocktrans with label=snap.target_label %}Your progress toward {{ label }}.{% endblocktrans %}
+    {% elif snap.has_resume and not snap.extraction_failed %}
+      {% trans "Here is where your resume stands. Set a career goal to get a personalised plan." %}
+    {% else %}
+      {% trans "Upload your resume to begin your career analysis." %}
+    {% endif %}
+  </p>
+</div>
+
+{% if not snap.has_resume %}
+<div class="card p-6 mb-6 flex items-center justify-between gap-4">
+  <div>
+    <div class="font-semibold text-maroon">{% trans "No resume yet" %}</div>
+    <div class="text-sm text-[#7a6a5e] mt-1">{% trans "Upload your resume to begin your career analysis." %}</div>
+  </div>
+  <a href="{% url 'resume_analyzer' %}" class="btn-gold text-sm whitespace-nowrap">{% trans "Upload Resume" %}</a>
+</div>
+{% elif snap.extraction_failed %}
+<div class="card p-6 mb-6 flex items-center justify-between gap-4">
+  <div>
+    <div class="font-semibold text-maroon">{% trans "We couldn't detect skills in your latest resume" %}</div>
+    <div class="text-sm text-[#7a6a5e] mt-1">{% trans "Make sure it has a clearly headed Skills section, then upload it again." %}</div>
+  </div>
+  <a href="{% url 'resume_analyzer' %}" class="btn-gold text-sm whitespace-nowrap">{% trans "Upload Again" %}</a>
+</div>
+{% endif %}
+
+<div class="card p-5 mb-6 flex items-center justify-between gap-4">
+  {% if career_goal %}
+  <div>
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "TARGET CAREER" %}</div>
+    <div class="text-lg font-semibold text-maroon">{{ career_goal.role.name }} — {{ career_goal.company.name }}</div>
+    <div class="text-xs text-[#7a6a5e] mt-1">{{ career_goal.timeline_months }} {% trans "month timeline" %}{% if roadmap_progress is not None %} · {% trans "Roadmap progress" %}: {{ roadmap_progress }}%{% endif %}</div>
+  </div>
+  <a href="{% url 'careerpath:roadmap' %}" class="btn-gold text-sm whitespace-nowrap">{% trans "View Roadmap" %}</a>
+  {% else %}
+  <div>
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "TARGET CAREER" %}</div>
+    <div class="text-lg font-semibold text-maroon">{% trans "No goal set yet" %}</div>
+    <div class="text-xs text-[#7a6a5e] mt-1">{% trans "Pick a target role, company and timeline to get a personalized roadmap." %}</div>
+  </div>
+  <a href="{% url 'careerpath:set_goal' %}" class="btn-gold text-sm whitespace-nowrap">{% trans "Set Career Goal" %}</a>
+  {% endif %}
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+  <a href="{% url 'resume_analyzer' %}" class="card p-5 hover:border-[#c99a3f] transition block">
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "RESUME SCORE" %}</div>
+    {% if snap.resume_score is not None %}
+      <div class="text-2xl font-bold text-maroon">{{ snap.resume_score }}<span class="text-sm text-[#7a6a5e]">/100</span></div>
+      <div class="text-xs text-[#7a6a5e] mt-1">{% trans "Section completeness" %}</div>
+    {% else %}
+      <div class="text-sm text-[#7a6a5e] mt-2">{% trans "Not analyzed yet" %}</div>
+    {% endif %}
+  </a>
+  <a href="{% url 'skill_analysis' %}" class="card p-5 hover:border-[#c99a3f] transition block">
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "CAREER READINESS" %}</div>
+    {% if snap.readiness is not None %}
+      <div class="text-2xl font-bold text-maroon">{{ snap.readiness }}<span class="text-sm text-[#7a6a5e]">%</span></div>
+      <div class="text-xs text-[#7a6a5e] mt-1">{% blocktrans with n=snap.detected|length total=snap.required|length %}{{ n }} of {{ total }} required skills{% endblocktrans %}</div>
+    {% else %}
+      <div class="text-sm text-[#7a6a5e] mt-2">{% trans "Needs a resume" %}</div>
+    {% endif %}
+  </a>
+  <a href="{% url 'skill_analysis' %}" class="card p-5 hover:border-[#c99a3f] transition block">
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "SKILLS ACQUIRED" %}</div>
+    {% if snap.has_resume %}
+      <div class="text-2xl font-bold text-maroon">{{ snap.skills_detected }}</div>
+      <div class="text-xs text-[#7a6a5e] mt-1">{% trans "Detected in your resume" %}</div>
+    {% else %}
+      <div class="text-sm text-[#7a6a5e] mt-2">{% trans "Needs a resume" %}</div>
+    {% endif %}
+  </a>
+  <a href="{% url 'learning_roadmap' %}" class="card p-5 hover:border-[#c99a3f] transition block">
+    <div class="text-xs text-[#7a6a5e] mb-1">{% trans "LEARNING PROGRESS" %}</div>
+    {% if learning.total_resources %}
+      <div class="text-2xl font-bold text-maroon">{{ learning.overall_progress }}<span class="text-sm text-[#7a6a5e]">%</span></div>
+      <div class="text-xs text-[#7a6a5e] mt-1">{{ learning.completed_resources }} / {{ learning.total_resources }} {% trans "tasks done" %}</div>
+    {% else %}
+      <div class="text-sm text-[#7a6a5e] mt-2">{% trans "No learning tasks yet" %}</div>
+    {% endif %}
+  </a>
+</div>
+
+<div class="grid md:grid-cols-3 gap-6 mb-6">
+  <div class="card p-6 md:col-span-2">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="font-semibold">{% trans "Critical Skill Gaps" %}</h3>
+      {% if top_gaps %}<a href="{% url 'skill_analysis' %}" class="text-xs text-maroon font-semibold">{% trans "Open Skill Analysis" %}</a>{% endif %}
+    </div>
+    {% if top_gaps %}
+      <ul class="divide-y divide-[#ecdfc4]">
+        {% for g in top_gaps %}
+        <li class="py-3 flex items-center justify-between">
+          <span class="text-sm font-medium">{{ g }}</span>
+          <a href="{% url 'learning_roadmap' %}" class="text-xs text-maroon font-semibold">{% trans "Start learning" %}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% elif snap.readiness == 100 %}
+      <p class="text-sm text-[#7a6a5e]">{% trans "You meet every tracked requirement for this role." %}</p>
+    {% else %}
+      <p class="text-sm text-[#7a6a5e]">{% trans "Skill gaps appear here once your resume has been analyzed." %}</p>
+    {% endif %}
+  </div>
+
+  <div class="card p-6">
+    <h3 class="font-semibold mb-2">{% trans "AI Career Assistant" %}</h3>
+    <p class="text-sm text-[#7a6a5e] mb-4">{% trans "Ask about your readiness, resume, skill gaps or next steps." %}</p>
+    <a href="{% url 'ai_chatbot' %}" class="btn-maroon w-full text-center block text-sm">{% trans "Open Assistant" %}</a>
+  </div>
+</div>
+
+<div class="grid md:grid-cols-3 gap-6">
+  <div class="card p-6 md:col-span-2">
+    <h3 class="font-semibold mb-4">{% trans "Recommended Jobs" %}</h3>
+    {% if jobs %}
+    <div class="grid md:grid-cols-3 gap-4">
+      {% for job in jobs %}
+      <div class="border border-[#ecdfc4] rounded-xl p-4 flex flex-col">
+        {% if job.match is not None %}<span class="badge badge-growing self-start">{{ job.match }}% {% trans "skill match" %}</span>{% endif %}
+        <div class="font-semibold text-sm mt-2">{{ job.title }}</div>
+        <div class="text-xs text-[#7a6a5e]">{{ job.company }} · {{ job.location }}</div>
+        {% if job.deadline %}<div class="text-xs text-[#7a6a5e]">{% trans "Apply by" %} {{ job.deadline|date:"M j" }}</div>{% endif %}
+        {% if job.application_url %}
+        <a href="{{ job.application_url }}" target="_blank" rel="noopener noreferrer" class="btn-maroon w-full text-xs mt-auto pt-2 text-center block">{% trans "Apply" %}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+      <p class="text-sm text-[#7a6a5e]">{% trans "No published jobs yet. New postings from alumni and staff appear here once approved." %}</p>
+    {% endif %}
+  </div>
+
+  <div class="space-y-6">
+    <div class="card p-6">
+      <h3 class="font-semibold mb-3">{% trans "Recommended Internships" %}</h3>
+      {% for i in internships %}
+      <div class="border-b border-[#ecdfc4] py-3 last:border-0">
+        <div class="flex justify-between items-start gap-2">
+          <div>
+            <div class="text-sm font-semibold">{{ i.title }}</div>
+            <div class="text-xs text-[#7a6a5e]">{{ i.company }}</div>
+          </div>
+          {% if i.match is not None %}<span class="badge badge-growing">{{ i.match }}%</span>{% endif %}
+        </div>
+        {% if i.deadline %}<div class="text-xs text-red-700 mt-1">{% trans "Deadline" %} {{ i.deadline|date:"M j" }}</div>{% endif %}
+        {% if i.application_url %}<a href="{{ i.application_url }}" target="_blank" rel="noopener noreferrer" class="text-xs text-maroon font-semibold">{% trans "Apply" %}</a>{% endif %}
+      </div>
+      {% empty %}
+      <p class="text-sm text-[#7a6a5e]">{% trans "No published internships yet." %}</p>
+      {% endfor %}
+    </div>
+    <div class="card p-6">
+      <h3 class="font-semibold mb-3">{% trans "Upcoming Events" %}</h3>
+      {% for e in events %}
+      <div class="border-b border-[#ecdfc4] py-2 last:border-0">
+        <div class="text-sm font-semibold">{{ e.title }}</div>
+        <div class="text-xs text-[#7a6a5e]">{{ e.event_date|date:"M j" }} · {{ e.location }}</div>
+      </div>
+      {% empty %}
+      <p class="text-sm text-[#7a6a5e]">{% trans "No upcoming events." %}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
